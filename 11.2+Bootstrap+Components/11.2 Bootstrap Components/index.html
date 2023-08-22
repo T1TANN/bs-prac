@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -7,14 +7,13 @@
   <title>Bootstrap Components</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css"
-  <style>
-
-  </style>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+  
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" >
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
         <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
@@ -55,7 +54,7 @@
     <h1 class="display-4 fw-bold text-body-emphasis">Move With Joy</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Welcome to our website, where we are on a mission to provide exceptional moving services to
-        customers in the US. As a
+        customers in the INDIA. As a
         startup, we believe that moving doesn't have to be stressful or complicated, and we are passionate about making
         the
         process as seamless and enjoyable as possible.
@@ -168,62 +167,143 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <div  class="gradient-background" class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalTour" >
+      <div class="modal-dialog" role="document" >
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-body p-5">
+            <h2 class="fw-bold mb-0">OUR FEATURES</h2>
+    
+            <ul class="d-grid gap-4 my-5 list-unstyled small">
+              <li class="d-flex gap-4">
+                <svg class="bi text-body-secondary flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                <div>
+                  <h5 class="mb-0">Low Cost</h5>
+                  Move to your new home with low budget.
+                </div>
+              </li>
+              <li class="d-flex gap-4">
+                <svg class="bi text-warning flex-shrink-0" width="48" height="48"><use xlink:href="#bookmark-star"></use></svg>
+                <div>
+                  <h5 class="mb-0">Exceptional Service</h5>
+                  We provide service by exceptional workers.
+                </div>
+              </li>
+              
+            </ul>
+            <button type="button" class="btn btn-lg btn-primary mt-5 w-100" data-bs-dismiss="modal">Contact,Now!!</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container my-5">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
-        <li class="breadcrumb-item"><a href="#">Instagram</a></li>
-        <li class="breadcrumb-item"><a href="#">Facebook</a></li>
-        <li class="breadcrumb-item active" aria-current="page">SUPPORT</li>
-      </ol>
-    </nav>
-  </div>
-  <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-        <p class="text-body-secondary">© 2023</p>
+  
+ 
+  <div class="container py-3">
+    <header>
+      
+  
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
+        <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+      </div>
+    </header>
+  
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Within City </h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">10,000 RS<small class="text-body-secondary fw-light"></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Shift within 10 days</li>
+                <li>10 workers</li>
+                
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Contact Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Between City</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">20,000 RS<small class="text-body-secondary fw-light"></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li> Shift within 15 days</li>
+                <li>Vehicle servce included</li>
+                <li>10 workers</li>
+                
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Contact Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">City Tempo</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">25,000 RS<small class="text-body-secondary fw-light"></small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Shift Between Cities within 8 days</li>
+                <li>15 workers</li>
+                <li>Vehicle included</li>
+                
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            </div>
+          </div>
+        </div>
       </div>
   
-      <div class="col mb-3">
+      
   
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-  
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+        
+          <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
+  </div>
+  
+    
   </div>
   
 
